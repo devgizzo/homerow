@@ -2,7 +2,7 @@
 
 
 
-### Launching and quiting applications
+## Launching and quiting applications
 
 Applications are assigned left to right on the keyboard, Super F1 till F10...
 
@@ -28,7 +28,7 @@ Next applications Super F11 till F18 are assigned left to right aswell...
 
 ![](images/f%20layer.png)
 
-### Copy / Paste
+## Copy / Paste
 
 Move your hand one row down from the home row.
 
@@ -40,7 +40,7 @@ Move your hand one row down from the home row.
 | C   | Ctrl + c | Copy     |
 | V   | Ctrl + v | Paste    |
 
-### Common operations
+## Common operations
 
 #### Hold Z Key
 
@@ -51,7 +51,7 @@ Move your hand one row down from the home row.
 | D   | Backspace | Remove text to the left |
 | F   | Ctrl + f  | Find text               |
 
-### Navigation (move cursor one character at a time)
+## Navigation (move cursor one character at a time)
 
 #### Hold Z Key
 
@@ -68,7 +68,7 @@ Move your hand one row down from the home row.
 
 ![](images/z%20layer.png)
 
-### Navigation (selecting one character at a time)
+## Navigation (selecting one character at a time)
 
 #### Hold X Key
 
@@ -83,7 +83,7 @@ Move your hand one row down from the home row.
 | P   | Page up     | Move a page up        |
 | ;   | Page down   | Move a page down      |
 
-### Delete
+## Delete
 
 #### Hold X Key
 
@@ -93,7 +93,7 @@ Move your hand one row down from the home row.
 
 ![](images/x%20layer.png)
 
-### Navigation (move cursor one word at a time)
+## Navigation (move cursor one word at a time)
 
 ##### Hold C Key
 
@@ -110,7 +110,7 @@ Move your hand one row down from the home row.
 
 ![](images/c%20layer.png)
 
-### Navigation (selecting one word at a time)
+## Navigation (selecting one word at a time)
 
 #### Hold V Key
 
@@ -125,7 +125,7 @@ Move your hand one row down from the home row.
 | P   | Page up     | Move a page up        |
 | ;   | Page down   | Move a page down      |
 
-### Undo / redo
+## Undo / redo
 
 #### Hold V Key
 
@@ -136,7 +136,7 @@ Move your hand one row down from the home row.
 
 ![](images/v%20layer.png)
 
-### Browser shortcuts
+## Browser shortcuts
 
 Move your hand one row up from the home row to access the browser specific shortcuts.
 
