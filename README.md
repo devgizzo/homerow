@@ -6,7 +6,7 @@
 
 Applications are assigned left to right on the keyboard, Super F1 till F10...
 
-#### Hold A key
+### Hold A key
 
 | layer key | shortcut      | function                                                                                            |
 | --------- | ------------- | --------------------------------------------------------------------------------------------------- |
@@ -17,7 +17,7 @@ Applications are assigned left to right on the keyboard, Super F1 till F10...
 
 ![](images/a%20layer.png)
 
-#### Hold F key
+### Hold F key
 
 Next applications Super F11 till F18 are assigned left to right aswell...
 
@@ -32,7 +32,7 @@ Next applications Super F11 till F18 are assigned left to right aswell...
 
 Move your hand one row down from the home row.
 
-##### Hold Z key
+#### Hold Z key
 
 | key | shortcut | function |
 | --- | -------- | -------- |
@@ -42,7 +42,7 @@ Move your hand one row down from the home row.
 
 ## Common operations
 
-#### Hold Z Key
+### Hold Z Key
 
 | key | shortcut  | function                |
 | --- | --------- | ----------------------- |
@@ -53,7 +53,7 @@ Move your hand one row down from the home row.
 
 ## Navigation (move cursor one character at a time)
 
-#### Hold Z Key
+### Hold Z Key
 
 | key | shortcut    | function              |
 | --- | ----------- | --------------------- |
@@ -70,7 +70,7 @@ Move your hand one row down from the home row.
 
 ## Navigation (selecting one character at a time)
 
-#### Hold X Key
+### Hold X Key
 
 | key | shortcut    | function              |
 | --- | ----------- | --------------------- |
@@ -85,7 +85,7 @@ Move your hand one row down from the home row.
 
 ## Delete
 
-#### Hold X Key
+### Hold X Key
 
 | key | shortcut | function                                                                  |
 | --- | -------- | ------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ Move your hand one row down from the home row.
 
 ## Navigation (move cursor one word at a time)
 
-##### Hold C Key
+#### Hold C Key
 
 | key | shortcut    | function              |
 | --- | ----------- | --------------------- |
@@ -112,7 +112,7 @@ Move your hand one row down from the home row.
 
 ## Navigation (selecting one word at a time)
 
-#### Hold V Key
+### Hold V Key
 
 | key | shortcut    | function              |
 | --- | ----------- | --------------------- |
@@ -127,7 +127,7 @@ Move your hand one row down from the home row.
 
 ## Undo / redo
 
-#### Hold V Key
+### Hold V Key
 
 | key | shortcut         | function |
 | --- | ---------------- | -------- |
@@ -140,7 +140,7 @@ Move your hand one row down from the home row.
 
 Move your hand one row up from the home row to access the browser specific shortcuts.
 
-#### Hold Q Key
+### Hold Q Key
 
 | key | shortcut           | function             |
 | --- | ------------------ | -------------------- |
