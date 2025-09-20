@@ -1,6 +1,7 @@
-# Keyd bindings
+# Homerow bindings
 
-
+Macos version uses Karabiner-elements and Raycast.
+Linux version uses Keyd.
 
 ## Launching and quiting applications
 
