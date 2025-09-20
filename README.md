@@ -32,7 +32,7 @@ Next applications Super F11 till F18 are assigned left to right aswell...
 
 Move your hand one row down from the home row.
 
-#### Hold Z key
+### Hold Z key
 
 | key | shortcut | function |
 | --- | -------- | -------- |
