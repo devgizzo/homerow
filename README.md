@@ -26,7 +26,7 @@ Next applications Super F11 till F18 are assigned left to right aswell...
 | Q         | Super + F11 | Launch application 11 |
 | X         | Super + F18 | Launch application 18 |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/f%20layer.png)
+![](images/f%20layer.png)
 
 ### Copy / Paste
 
@@ -66,7 +66,7 @@ Move your hand one row down from the home row.
 | P   | Page up     | Move a page up        |
 | ;   | Page down   | Move a page down      |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/z%20layer.png)
+![](images/z%20layer.png)
 
 ### Navigation (selecting one character at a time)
 
@@ -91,7 +91,7 @@ Move your hand one row down from the home row.
 | --- | -------- | ------------------------------------------------------------------------- |
 | D   | Delete   | Backspace is in the same location but on the Z key layer. This is delete. |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/x%20layer.png)
+![](images/x%20layer.png)
 
 ### Navigation (move cursor one word at a time)
 
@@ -108,7 +108,7 @@ Move your hand one row down from the home row.
 | P   | Page up     | Move a page up        |
 | ;   | Page down   | Move a page down      |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/c%20layer.png)
+![](images/c%20layer.png)
 
 ### Navigation (selecting one word at a time)
 
@@ -134,7 +134,7 @@ Move your hand one row down from the home row.
 | Z   | Ctrl + Z         | Undo     |
 | X   | Ctrl + shift + Z | Redo     |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/v%20layer.png)
+![](images/v%20layer.png)
 
 ### Browser shortcuts
 
@@ -149,4 +149,4 @@ Move your hand one row up from the home row to access the browser specific short
 | W   | Ctrl + W           | Close tab            |
 | T   | Ctrl + T           | Open new tab         |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/q%20layer.png)
+![](images/q%20layer.png)
