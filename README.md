@@ -15,7 +15,7 @@ Applications are assigned left to right on the keyboard, Super F1 till F10...
 | Q         | Super + Q     | Quit current application                                                                            |
 | Space     | Super + space | Launch a menu (like arcmenu) for launching arbitrairy apps that are not covered by the keyd layers. |
 
-![](/home/gizzo/Data/Gnome%20custom%20parts/keyd/images/a%20layer.png)
+![](images/a%20layer.png)
 
 ##### Hold F key
 
