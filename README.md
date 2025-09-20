@@ -95,7 +95,7 @@ Move your hand one row down from the home row.
 
 ## Navigation (move cursor one word at a time)
 
-#### Hold C Key
+### Hold C Key
 
 | key | shortcut    | function              |
 | --- | ----------- | --------------------- |
