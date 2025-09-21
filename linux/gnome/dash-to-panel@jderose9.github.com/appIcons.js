@@ -179,6 +179,22 @@ export const TaskbarAppIcon = GObject.registerClass(
 
       this._dtpIconContainer.add_child(this._iconContainer)
 
+      let found = false;
+      let actor = this._dtpIconContainer;
+      let effects = actor.get_effects();
+      for (let i = 0; i < effects.length; i++) {
+          let effect = effects[i];
+          if (effect instanceof Clutter.DesaturateEffect) {
+              found = true;
+          }
+      }
+      if (!found) {
+        this._dtpIconContainer.add_effect_with_name(
+          'desaturate',
+          new Clutter.DesaturateEffect({ factor: 1 }),
+        );
+      } 
+
       if (appInfo.window) {
         let box = Utils.createBoxLayout()
 
@@ -847,21 +863,7 @@ export const TaskbarAppIcon = GObject.registerClass(
 
       } else {
 
-        let found = false;
-        let actor = this._dtpIconContainer;
-        let effects = actor.get_effects();
-        for (let i = 0; i < effects.length; i++) {
-            let effect = effects[i];
-            if (effect instanceof Clutter.DesaturateEffect) {
-                found = true;
-            }
-        }
-        if (!found) {
-          this._dtpIconContainer.add_effect_with_name(
-            'desaturate',
-            new Clutter.DesaturateEffect({ factor: 1 }),
-          );
-        }
+
         
       }
 
@@ -1454,6 +1456,23 @@ export const TaskbarAppIcon = GObject.registerClass(
       let n = this._getRunningIndicatorCount()
 
       if (!n) {
+        if (!isFocused) {
+          let found = false;
+          let actor = this._dtpIconContainer;
+          let effects = actor.get_effects();
+          for (let i = 0; i < effects.length; i++) {
+              let effect = effects[i];
+              if (effect instanceof Clutter.DesaturateEffect) {
+                  found = true;
+              }
+          }
+          if (!found) {
+            this._dtpIconContainer.add_effect_with_name(
+              'desaturate',
+              new Clutter.DesaturateEffect({ factor: 1 }),
+            );
+          } 
+        }
         return
       }
 
@@ -1750,6 +1769,7 @@ export const TaskbarAppIcon = GObject.registerClass(
         } else {
           this._numberOverlayLabel.set_text(label.toString())
         }
+
         this._updateNumberOverlay()
       }
 
@@ -1787,6 +1807,13 @@ export const TaskbarAppIcon = GObject.registerClass(
         font-size: ${fontSize}px;
         height: ${size}px;
       `
+
+      if (this._getRunningIndicatorCount() > 0) {
+        style += "color: white";
+      } else {
+        style += "color: gray";
+      }
+
       this._numberOverlayLabel.set_style(style)
     }
 
