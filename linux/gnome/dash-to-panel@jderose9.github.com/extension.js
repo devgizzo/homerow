@@ -59,11 +59,8 @@ export default class DashToPanelExtension extends Extension {
   }
 
   async enable() {
-
-    SETTINGS = this.getSettings('org.gnome.shell.extensions.dash-to-panel')
-
     DTP_EXTENSION = this
-    
+    SETTINGS = this.getSettings('org.gnome.shell.extensions.dash-to-panel')
     DESKTOPSETTINGS = new Gio.Settings({
       schema_id: 'org.gnome.desktop.interface',
     })
@@ -151,7 +148,6 @@ export default class DashToPanelExtension extends Extension {
         )
       }
     } else completeEnable()
-
   }
 
   disable() {
@@ -159,6 +155,7 @@ export default class DashToPanelExtension extends Extension {
 
     PanelSettings.disable(SETTINGS)
     panelManager.disable()
+    PanelSettings.clearCache()
 
     DTP_EXTENSION = null
     SETTINGS = null

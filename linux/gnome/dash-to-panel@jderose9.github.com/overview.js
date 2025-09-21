@@ -122,7 +122,7 @@ export const Overview = class {
             let { transitioning, finalState, progress } =
               overviewControls._stateAdjustment.getStateTransitionParams()
             let size =
-              focusedPanel.geom[focusedPanel.checkIfVertical() ? 'w' : 'h'] *
+              focusedPanel.geom[focusedPanel.geom.vertical ? 'w' : 'h'] *
               (transitioning
                 ? Math.abs((finalState != 0 ? 0 : 1) - progress)
                 : 1)
@@ -221,7 +221,7 @@ export const Overview = class {
       seenApps[appIcon.app] = (seenApps[appIcon.app] || 0) + 1
     })
 
-    //this._showOverlay() lets not show overlay gizzo
+    //this._showOverlay() gizzo lets not show overlay
 
     if (appIndex < apps.length) {
       let appIcon = apps[appIndex]
