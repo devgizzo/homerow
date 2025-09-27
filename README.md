@@ -1,7 +1,24 @@
 # Homerow bindings
 
-Macos version uses Karabiner-elements and Raycast.
-Linux version uses Keyd.
+Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner and Raycast.
+Linux version uses Keyd or Kanata.
+
+
+
+To enable support for F13 and up on linux (wayland)
+
+```
+cp /usr/share/X11/xkb/symbols/inet ~/.config/xkb/symbols/inet
+```
+
+and then modify the entries on the .config inet file like below
+
+    key <FK13>   {      [ F13                    ]       };
+    key <FK14>   {      [ F14                    ]       };
+    key <FK15>   {      [ F15                    ]       };
+    key <FK16>   {      [ F16                    ]       };
+    key <FK17>   {      [ F17                    ]       };
+    key <FK18>   {      [ F18                    ]       };
 
 ## Launching and quiting applications
 
