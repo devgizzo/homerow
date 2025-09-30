@@ -30,7 +30,7 @@ and then modify the entries on the .config inet file like below
 
 The launching of the applications in your distro is something you should take care of yourself using a script. I have modified Gnome Dash to Panel extension to show the shortcut letters next to dash icons and to handle the keyboard shortcuts. It is in the linux folder. I am not planning on maintain my own version for long though, I might switch to script or waybar in the future. Basically it is handy to have a dash that shows where you are and where you can go, but the longer you use the shortcuts the less you need them in your vision.
 
-Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.cfg) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
+Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.kbd) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
 
 ## MacOs
 
