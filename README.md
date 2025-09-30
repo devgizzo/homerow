@@ -50,13 +50,14 @@ A Windows version is easily created from the linux Kanata.kbd config. So far I h
 
 ## Other key mappings
 
-My bindings also provide A + space to call a menu to launch arbitrary apps
-A + Q to quit apps
-Z layer provides cursor movement single step and some other common text operations.
-X layer provides cursor movement single step with selection
-C layer provides cursor movement per word
-V layer provides cursor movement per word with selection
-Q layer provides shortcuts to open, close and navigation browser tabs
+* My bindings also provide A + space to call a menu to launch arbitrary apps
+* Caps Lock and ctrl are swapped and a tap on Caps Lock which is ctrl results in toggling the visibility of the Gnome Dash for reference on where to go or which apps are open.
+* A + Q to quit apps
+* Z layer provides cursor movement single step and some other common text operations.
+* X layer provides cursor movement single step with selection
+* C layer provides cursor movement per word
+* V layer provides cursor movement per word with selection
+* Q layer provides shortcuts to open, close and navigation browser tabs
 
 You might find these useful or you can comment them out or remove them.
 
