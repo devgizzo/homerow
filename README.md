@@ -34,14 +34,15 @@ Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata
 
 ## MacOs
 
-MacOS works through [Raycast](https://www.raycast.com/) for assigning shortcuts to launch apps. These shortcuts are then mapped from a key mapper like Karabiner.
+MacOS works through [Raycast](https://www.raycast.com/) for assigning shortcuts to launch apps. These shortcuts can then be called from other applications.
 For MacOS I first worked with [Karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), you can install this with the [karabiner.json](https://github.com/devgizzo/homerow/blob/main/macos/karabiner.json) found in the macos folder.
+This works but isn't ideal. You need to maintain a bit of lag between opening a keyboard layer and selecting an option on the layer, else you end up typing letters instead.
 
 However Kanata can also be installed on macos. So I have created a [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata.kbd) config file to support this. Kanata needs the Karabiner driver for this. So if you installed Karabiner-Elements you already have this installed.
-For MacOS Kanata is more stable and the keyboard layers are more solid. So I am not moving back to using just Karabiner-Elements without Kanata.
-Anyway, this solution also uses Raycast to trigger the shortcuts that launch or focus the apps.
+For MacOS Kanata is more stable and the keyboard layers are more solid. So I am not moving back.
+Anyway, this solution also uses Raycast to assign the shortcuts that launch or focus the apps.
 
-Kanata is a bit of a hassle to install on MacOS though, because of the conflict with Karabiner itself, while it uses its driver and because security issues. For me it is worth it though.
+Kanata is a bit of a hassle to install on MacOS though, because of the conflict with Karabiner itself, while it uses its driver and because of security issues. For me it is worth it though.
 
 ## Windows
 A Windows version is easily created from the linux Kanata.kbd config. So far I have not done this yet.
