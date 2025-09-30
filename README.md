@@ -30,6 +30,8 @@ and then modify the entries on the .config inet file like below
 
 The launching of the applications in your distro is something you should take care of yourself using a script. I have modified Gnome Dash to Panel extension to show the shortcuts and to handle the keyboard shortcuts. But other distros have other ways to handle shortcuts.
 
+Guides to install ![Keyd](https://github.com/rvaiya/keyd/tree/master) and ![Kanata](https://github.com/jtroo/kanata) can be found on github.
+
 ## Macos
 
 Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner driver and Raycast.
