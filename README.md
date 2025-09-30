@@ -1,17 +1,19 @@
 # Homerow bindings
 
-The purpose of these keybindings is to navigate between a maximum of 18 apps with the keyboard using one hand holding two keys.
-Some apps use the mouse, some mainly the keyboard, either one is just as accessible under the same combination.
-On Linux and MacOS.
+The purpose of these keybindings is to start, focus and quit 18 of your favorite apps with the keyboard using a single hand on the homerow.
+No finger gymnastics, no need to look at the keyboard. Your other hand can be on the keyboard aswell or on the mouse, this doesn't impact switching speed.
+You can keep your eyes on the screen.
 
-## Macos
-
-Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner driver and Raycast.
+Having your applications under the same shortcuts no matter which platform, Linux, MacOs or Windows enables muscle memory over time. Over time navigating between apps will be instant.
+Depending on your desktop platform the mouse can come along towards the new app in focus. Either on the same monitor or on another monitor.
 
 ## Linux
-Linux version uses Keyd or Kanata.
 
-To enable support for F13 and up on linux (wayland)
+For Linux I have configuration files for Keyd or Kanata. Two different key mappers to choose from.
+Keyd is lower latency, Kanata is multiplatform so you can stay close to the same configuration file for different platforms.
+
+The mappings use Super + F1 until Super + F18 for launching the applications.
+To enable support for F13 and up on linux (wayland) you have to configure the following file
 
 ```
 cp /usr/share/X11/xkb/symbols/inet ~/.config/xkb/symbols/inet
@@ -25,6 +27,12 @@ and then modify the entries on the .config inet file like below
     key <FK16>   {      [ F16                    ]       };
     key <FK17>   {      [ F17                    ]       };
     key <FK18>   {      [ F18                    ]       };
+
+The launching of the applications in your distro is something you should take care of yourself using a script. I have modified Gnome Dash to Panel extension to show the shortcuts and to handle the keyboard shortcuts. But other distros have other ways to handle shortcuts.
+
+## Macos
+
+Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner driver and Raycast.
 
 ## Windows
 A Windows version is easily created from the linux Kanata.kbd config.
