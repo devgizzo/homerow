@@ -30,16 +30,18 @@ and then modify the entries on the .config inet file like below
 
 The launching of the applications in your distro is something you should take care of yourself using a script. I have modified Gnome Dash to Panel extension to show the shortcuts and to handle the keyboard shortcuts. But other distros have other ways to handle shortcuts.
 
-Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service to launch an executable with the corresponding [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.cfg) found in the corresponding folder or the [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
+Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.cfg) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
 
 ## MacOs
 
 MacOS works through [Raycast](https://www.raycast.com/) for assigning shortcuts to launch apps. These shortcuts are then mapped from a key mapper like Karabiner.
 For MacOS I first worked with [Karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), you can install this with the [karabiner.json](https://github.com/devgizzo/homerow/blob/main/macos/karabiner.json) found in the macos folder.
 
-However Kanata can also be installed on macos. So I have created a Kanata.kbd config file to support this. Kanata needs the Karabiner driver for this. So if you installed Karabiner-Elements you already have this installed.
+However Kanata can also be installed on macos. So I have created a [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata.kbd) config file to support this. Kanata needs the Karabiner driver for this. So if you installed Karabiner-Elements you already have this installed.
 For MacOS Kanata is more stable and the keyboard layers are more solid. So I am not moving back to using just Karabiner-Elements without Kanata.
 Anyway, this solution also uses Raycast to trigger the shortcuts that launch or focus the apps.
+
+Kanata is a bit of a hassle to install on MacOS though, because of the conflict with Karabiner itself, while it uses its driver and because security issues. For me it is worth it though.
 
 ## Windows
 A Windows version is easily created from the linux Kanata.kbd config. So far I have not done this yet.
