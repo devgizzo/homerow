@@ -1,9 +1,15 @@
 # Homerow bindings
 
-Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner and Raycast.
+The purpose of these keybindings is to navigate between a maximum of 18 apps with the keyboard using one hand holding two keys.
+Some apps use the mouse, some mainly the keyboard, either one is just as accessible under the same combination.
+On Linux and MacOS.
+
+## Macos
+
+Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner driver and Raycast.
+
+## Linux
 Linux version uses Keyd or Kanata.
-
-
 
 To enable support for F13 and up on linux (wayland)
 
@@ -19,6 +25,9 @@ and then modify the entries on the .config inet file like below
     key <FK16>   {      [ F16                    ]       };
     key <FK17>   {      [ F17                    ]       };
     key <FK18>   {      [ F18                    ]       };
+
+## Windows
+A Windows version is easily created from the linux Kanata.kbd config.
 
 ## Launching and quiting applications
 
