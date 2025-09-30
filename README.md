@@ -45,7 +45,26 @@ Anyway, this solution also uses Raycast to assign the shortcuts that launch or f
 Kanata is a bit of a hassle to install on MacOS though, because of the conflict with Karabiner itself, while it uses its driver and because of security issues. For me it is worth it though.
 
 ## Windows
+
 A Windows version is easily created from the linux Kanata.kbd config. So far I have not done this yet.
+
+## Other key mappings
+
+My bindings also provide A + space to call a menu to launch arbitrary apps
+A + Q to quit apps
+Z layer provides cursor movement single step and some other common text operations.
+X layer provides cursor movement single step with selection
+C layer provides cursor movement per word
+V layer provides cursor movement per word with selection
+Q layer provides shortcuts to open, close and navigation browser tabs
+
+You might find these useful or you can comment them out or remove them.
+
+## The downsides of homerow keymapping
+
+In some rare cases you might trigger a layer when typing because of holding keys while typing.
+But the biggest downside is latency. You might notice some letters print slower to the screen.
+But you gain lightspeed navigation!
 
 ## Launching and quiting applications
 
