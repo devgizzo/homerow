@@ -66,8 +66,12 @@ You might find these useful or you can comment them out or remove them.
 
 ## The downsides of homerow keymapping
 
+One of the downsides of this method is that it prevents traditional homerow mods.
+If you are used to type shift, ctrl, alt and super using these keys that method will overlap my usecase.
+
 In some rare cases you might trigger a layer when typing because of holding keys while typing.
 But the biggest downside is latency. You might notice some letters print slower to the screen.
+
 But you gain lightspeed navigation!
 
 ## Launching and quiting applications
