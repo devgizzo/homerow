@@ -34,6 +34,9 @@ Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata
 
 ## MacOs
 
+Keyboard navigation shines even more on a macbook with macos. Just keep your application windows maximized, no need to fiddle.
+Even better to run Asahi Linux or Asahi Alarm with Omarchy, but if you need multi monitor setups or the best battery life or mac specific software, Raycast and Karabiner make macos workable for a lot of people.
+
 MacOS works through [Raycast](https://www.raycast.com/) for assigning shortcuts to launch apps. These shortcuts can then be called from other applications.
 For MacOS I first worked with [Karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), you can install this with the [karabiner.json](https://github.com/devgizzo/homerow/blob/main/macos/karabiner.json) found in the macos folder.
 This works but isn't ideal. You need to maintain a bit of lag between opening a keyboard layer and selecting an option on the layer, else you end up typing letters instead.
