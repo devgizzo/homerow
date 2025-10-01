@@ -1,10 +1,10 @@
 # Homerow bindings
 
-The purpose of these keybindings is to start, focus and quit 18 of your favorite apps with the keyboard using a single hand on the homerow.
-No finger gymnastics, no need to look at the keyboard. Your other hand can be on the keyboard aswell or on the mouse, this doesn't impact switching speed.
-You can keep your eyes on the screen.
+The quickest way to navigate between applications is through keyboard shortcuts. But how many shortcuts can you reach?
+My solution provides navigation between a maximum of 18 applications using a single hand on the keyboard.
+Applications that use the mouse don't break this workflow.
 
-Having your applications under the same shortcuts no matter which platform, Linux, MacOs or Windows enables muscle memory over time. Over time navigating between apps will be instant.
+Having your applications under the same shortcuts no matter which platform, Linux, MacOs or Windows enables muscle memory over time. Navigating will be instant.
 Depending on your desktop platform the mouse can come along towards the new app in focus. Either on the same monitor or on another monitor.
 
 ## Linux
