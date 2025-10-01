@@ -1,6 +1,6 @@
 # Homerow bindings
 
-The quickest way to navigate between applications is through keyboard shortcuts. But how many shortcuts can you reach?
+The quickest way to navigate between applications is through keyboard shortcuts. But how many shortcuts can you reach blindly?
 My solution provides navigation between a maximum of 18 applications using a single hand on the keyboard.
 Applications that use the mouse don't break this workflow.
 
