@@ -9,7 +9,7 @@ Depending on your desktop platform the mouse can come along towards the new app 
 
 ## Linux
 
-For Linux I have configuration files for Keyd or Kanata. Two different key mappers to choose from.
+For Linux I have configuration files for Keyd and Kanata. Two different key mappers to choose from.
 Keyd is lower latency, Kanata is multiplatform so you can stay close to the same configuration file for different platforms.
 
 The mappings use Super + F1 until Super + F18 for launching the applications.
