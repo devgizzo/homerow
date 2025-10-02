@@ -1,0 +1,148 @@
+
+(defcfg
+  process-unmapped-keys yes
+  log-layer-changes no
+)
+
+(defsrc
+ a f z x c v q
+)
+
+(defvar
+  timeouttap 200
+  timeouthold 500
+)
+
+;; ----------------------------
+;; BASE LAYER
+;; ----------------------------
+
+(deflayermap (base)
+  caps (tap-hold $timeouttap $timeouthold (multi M-i) lctrl)
+  a (tap-hold-release-keys $timeouttap $timeouthold a (layer-while-held a-layer) (z x y u i o p h j k l b n m))
+  f (tap-hold-release-keys $timeouttap $timeouthold f (layer-while-held f-layer) (r t y u i o p g h j k l c v b n m))
+  z (tap-hold-release-keys $timeouttap $timeouthold z (layer-while-held z-layer) (q w e r t y g h b n m))
+  x (tap-hold-release-keys $timeouttap $timeouthold x (layer-while-held x-layer) (q w e r t y a s f g h z c v b n m))
+  c (tap-hold-release-keys $timeouttap $timeouthold c (layer-while-held c-layer) (q w e r t y a s d f g h z x v b n m))
+  v (tap-hold-release-keys $timeouttap $timeouthold v (layer-while-held v-layer) (q w e r t y a s d f g h c b n m))
+  q (tap-hold-release-keys $timeouttap $timeouthold q (layer-while-held q-layer) (y u i o p a s d f g h j k l z x c v b n m))
+)
+
+;; ----------------------------
+;; A-LAYER
+;; ----------------------------
+
+(deflayermap (a-layer)
+  w (macro A-1)
+  e (macro A-2)
+  r (macro A-3)
+  t (macro A-4)
+  s (macro A-5)
+  d (macro A-6)
+  f (macro A-7)
+  g (macro A-8)
+  c (macro A-9)
+  v (macro A-0)
+  q (macro M-q)
+  spc (macro A-spc)
+)
+
+;; ----------------------------
+;; F-LAYER
+;; ----------------------------
+
+(deflayermap (f-layer)
+  q (macro A-f1)
+  w (macro A-f2)
+  e (macro A-f3)
+  a (macro A-f4)
+  s (macro A-f5)
+  d (macro A-f6)
+  z (macro A-f7)
+  x (macro A-f8)
+)
+
+;; ----------------------------
+;; Z-LAYER
+;; ----------------------------
+
+(deflayermap (z-layer)
+  u (macro home)
+  o (macro end)
+  j (multi left)
+  k (multi down)
+  i (multi up)
+  l (multi right)
+  p (macro pgup)
+  ; (macro pgdn)
+
+  x (macro M-x)
+  c (macro M-c)
+  v (macro M-v)
+  s (macro M-s)
+  f (macro M-f)
+  a (macro M-a)
+  d (macro bks)
+)
+
+;; ----------------------------
+;; X-LAYER
+;; ----------------------------
+
+(deflayermap (x-layer)
+  u (macro S-home)
+  o (macro S-end)
+  j (multi S-left)
+  k (multi S-down)
+  i (multi S-up)
+  l (multi S-right)
+  p (macro S-pgup)
+  ; (macro S-pgdn)
+
+  d (macro del)
+)
+
+;; ----------------------------
+;; C-LAYER
+;; ----------------------------
+
+(deflayermap (c-layer)
+  u (macro A-home)
+  o (macro A-end)
+  j (multi A-left)
+  k (multi A-down)
+  i (multi A-up)
+  l (multi A-right)
+  p (macro S-pgup)
+  ; (macro S-pgdn)
+)
+
+;; ----------------------------
+;; V-LAYER
+;; ----------------------------
+
+(deflayermap (v-layer)
+  u (macro A-S-home)
+  o (macro A-S-end)
+  j (multi A-S-left)
+  k (multi A-S-down)
+  i (multi A-S-up)
+  l (multi A-S-right)
+  p (macro S-pgup)
+  ; (macro S-pgdn)
+
+  z (macro M-z)
+  x (macro M-S-z)
+  d (macro M-S-k)
+)
+
+;; ----------------------------
+;; Q-LAYER
+;; ----------------------------
+
+(deflayermap (q-layer)
+  w (macro M-w)
+  e (macro C-S-tab)
+  r (macro C-tab)
+  t (macro M-t)
+)

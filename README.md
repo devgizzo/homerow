@@ -1,11 +1,19 @@
 # Homerow bindings
 
-Macos version uses Karabiner-elements and Raycast or Kanata, Karabiner and Raycast.
-Linux version uses Keyd or Kanata.
+The quickest way to navigate between applications is through keyboard shortcuts. But how many shortcuts can you reach blindly?
+My solution provides navigation between a maximum of 18 applications using a single hand on the keyboard.
+Applications that use the mouse don't break this workflow. Press and go.
 
+Having your applications under the same shortcuts no matter which platform, Linux, MacOs or Windows enables muscle memory over time. Navigating will be instant.
+Depending on your desktop platform the mouse can come along towards the new app in focus. Either on the same monitor or on another monitor.
 
+## Linux
 
-To enable support for F13 and up on linux (wayland)
+For Linux I have configuration files for Keyd and Kanata. Two different key mappers to choose from.
+Keyd is lower latency, Kanata is multiplatform so you can stay close to the same configuration file for different platforms.
+
+The mappings use Super + F1 to Super + F18 for launching the applications.
+To enable support for F13 and up on linux (wayland) you have to configure the following file
 
 ```
 cp /usr/share/X11/xkb/symbols/inet ~/.config/xkb/symbols/inet
@@ -19,6 +27,52 @@ and then modify the entries on the .config inet file like below
     key <FK16>   {      [ F16                    ]       };
     key <FK17>   {      [ F17                    ]       };
     key <FK18>   {      [ F18                    ]       };
+
+The launching of the applications in your distro is something you should take care of yourself using a script. I have modified Gnome Dash to Panel extension to show the shortcut letters next to dash icons and to handle the keyboard shortcuts. It is in the linux folder. I am not planning on maintain my own version for long though, I might switch to script or waybar in the future. Basically it is handy to have a dash that shows where you are and where you can go, but the longer you use the shortcuts the less you need them in your vision.
+
+Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.kbd) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
+
+## MacOs
+
+Keyboard navigation shines even more on a macbook with macos. Just keep your application windows maximized, no need to fiddle.
+Even better to run Asahi Linux or Asahi Alarm with Omarchy, but if you need multi monitor setups or the best battery life or mac specific software, Raycast and Karabiner make macos workable for a lot of people.
+
+MacOS works through [Raycast](https://www.raycast.com/) for assigning shortcuts to launch apps. These shortcuts can then be called from other applications.
+For MacOS I first worked with [Karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), you can install this with the [karabiner.json](https://github.com/devgizzo/homerow/blob/main/macos/karabiner.json) found in the macos folder.
+This works but isn't ideal. You need to maintain a bit of lag between opening a keyboard layer and selecting an option on the layer, else you end up typing letters instead.
+
+However Kanata can also be installed on macos. So I have created a [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata.kbd) config file to support this. Kanata needs the Karabiner driver for this. So if you installed Karabiner-Elements you already have this installed.
+For MacOS Kanata is more stable and the keyboard layers are more solid. So I am not moving back.
+Anyway, this solution also uses Raycast to assign the shortcuts that launch or focus the apps.
+
+Kanata is a bit of a hassle to install on MacOS though, because of the conflict with Karabiner itself, while it uses its driver and because of security issues. For me it is worth it though.
+
+## Windows
+
+A Windows version is easily created from the linux Kanata.kbd config. So far I have not done this yet.
+
+## Other key mappings
+
+* My bindings also provide A + space to call a menu to launch arbitrary apps
+* Caps Lock and ctrl are swapped and a tap on Caps Lock which is ctrl results in toggling the visibility of the Gnome Dash for reference on where to go or which apps are open.
+* A + Q to quit apps
+* Z layer provides cursor movement single step and some other common text operations.
+* X layer provides cursor movement single step with selection
+* C layer provides cursor movement per word
+* V layer provides cursor movement per word with selection
+* Q layer provides shortcuts to open, close and navigation browser tabs
+
+You might find these useful or you can comment them out or remove them.
+
+## The downsides of homerow keymapping
+
+One of the downsides of this method is that it prevents traditional homerow mods.
+If you are used to type shift, ctrl, alt and super using the homerow keys that method will overlap my usecase.
+
+In some rare cases you might trigger a layer when typing because of holding keys while typing.
+But the biggest downside is latency. You might notice some letters print slower to the screen.
+
+But you gain lightspeed navigation!
 
 ## Launching and quiting applications
 
