@@ -1,12 +1,12 @@
 (defcfg
-  process-unmapped-keys no
+  process-unmapped-keys yes
   log-layer-changes no
 )
 
 (defsrc
  q w e r t y u i o p
  a s d f g h j k l
- z x c v b n m caps lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - =
+ z x c v b n m caps lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
 )
 
 (defvar
@@ -22,13 +22,13 @@
 (deflayer base
  @q w e r t y u i o p
  @a s d @f g h j k l
- @z @x @c @v b n m @caps lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - =
+ @z @x @c @v b n m @caps lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
 )
 
 (deflayer nomods
  q w e r t y u i o p
  a s d f g h j k l
- z x c v b n m caps lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - =
+ z x c v b n m caps lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
 )
 (deffakekeys
   to-base (layer-switch base)
