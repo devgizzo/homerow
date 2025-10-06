@@ -6,7 +6,7 @@
 (defsrc
  q w e r t y u i o p
  a s d f g h j k l
- z x c v b n m caps lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
+ z x c v b n m caps lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter lmet
 )
 
 (defvar
@@ -22,13 +22,13 @@
 (deflayer base
  @q w e r t y u i o p
  @a s d @f g h j k l
- @z @x @c @v b n m @caps @lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
+ @z @x @c @v b n m @caps @lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter lmet
 )
 
 (deflayer nomods
  q w e r t y u i o p
  a s d f g h j k l
- z x c v b n m caps lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
+ z x c v b n m caps lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter lmet
 )
 (deffakekeys
   to-base (layer-switch base)
@@ -39,7 +39,7 @@
     (on-idle-fakekey to-base tap $timeoutregulartyping)
   )
 
-  caps (tap-hold $timeouttap $timeouthold (multi M-A-d) lctrl)
+  caps (tap-hold $timeouttap $timeouthold (multi M-A-d) lmet)
   lctrl caps
   a (tap-hold-release-keys $timeouttap $timeouthold (multi a @tap) (layer-while-held a-layer) (z x y u i o p h j k l b n m))
   f (tap-hold-release-keys $timeouttap $timeouthold (multi f @tap) (layer-while-held f-layer) (r t y u i o p g h j k l c v b n m))
