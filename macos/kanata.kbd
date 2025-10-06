@@ -39,7 +39,7 @@
     (on-idle-fakekey to-base tap $timeoutregulartyping)
   )
 
-  caps (tap-hold $timeouttap $timeouthold (multi M-i) lctrl)
+  caps (tap-hold $timeouttap $timeouthold (multi M-A-d) lctrl)
   lctrl caps
   a (tap-hold-release-keys $timeouttap $timeouthold (multi a @tap) (layer-while-held a-layer) (z x y u i o p h j k l b n m))
   f (tap-hold-release-keys $timeouttap $timeouthold (multi f @tap) (layer-while-held f-layer) (r t y u i o p g h j k l c v b n m))
