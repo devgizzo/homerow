@@ -86,7 +86,7 @@ Applications are assigned left to right on the keyboard, Super F1 till F10...
 | W         | Super + F1    | Launch application 1                                                                                |
 | V         | Super + F10   | Launch application 10                                                                               |
 | Q         | Super + Q     | Quit current application                                                                            |
-| Space     | Super + space | Launch a menu (like arcmenu) for launching arbitrairy apps that are not covered by the keyd layers. |
+| Space     | Super + space | Launch a menu (like arcmenu on linux or raycast on macos) for launching arbitrairy apps that are not covered by the keyd layers. |
 
 ![](images/a%20layer.png)
 
