@@ -10,7 +10,7 @@
 )
 
 (defvar
-  timeoutregulartyping 50
+  timeoutregulartyping 150
   timeouttap 300
   timeouthold 300
 )

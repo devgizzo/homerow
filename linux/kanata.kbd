@@ -10,7 +10,7 @@
 )
 
 (defvar
-  timeoutregulartyping 50
+  timeoutregulartyping 150
   timeouttap 300
   timeouthold 300
 )
@@ -21,7 +21,7 @@
 
 (deflayer base
  @q w e r t y u i o p
- @a s d @f g h j k l
+ @a @s d @f g h j k l
  @z @x @c @v b n m @caps @lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
 )
 
@@ -48,6 +48,7 @@
   c (tap-hold-release-keys $timeouttap $timeouthold (multi c @tap) (layer-while-held c-layer) (q w e r t y a s d f g h z x v b n m))
   v (tap-hold-release-keys $timeouttap $timeouthold (multi v @tap) (layer-while-held v-layer) (q w e r t y a s d f g h c b n m))
   q (tap-hold-release-keys $timeouttap $timeouthold (multi q @tap) (layer-while-held q-layer) (y u i o p a s d f g h j k l z x c v b n m))
+  s (tap-hold-release-keys $timeouttap $timeouthold (multi s @tap) (layer-while-held s-layer) (q w u i o p a j k l z x c c v b n m))
 )
 
 ;; ----------------------------
@@ -166,5 +167,20 @@
   w (macro C-w)
   e (macro C-S-tab)
   r (macro C-tab)
-  t (macro C-t)
+  t (macro C-t esc)
+)
+
+;; ----------------------------
+;; S-LAYER
+;; ----------------------------
+
+(deflayermap (s-layer)
+  e (macro home)
+  t (macro end)
+  d (multi left)
+  f (multi down)
+  r (multi up)
+  g (multi right)
+  y (macro pgup)
+  h (macro pgdn)
 )
