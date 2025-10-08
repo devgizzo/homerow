@@ -167,7 +167,7 @@
   w (macro C-w)
   e (macro C-S-tab)
   r (macro C-tab)
-  t (macro C-t esc)
+  t (macro C-t)
 )
 
 ;; ----------------------------
