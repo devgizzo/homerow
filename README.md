@@ -31,22 +31,59 @@ and then modify the entries on the .config inet file like below
 
 The launching of the applications in your distro is something you should take care of yourself using a script. I have [modified Gnome Dash to Panel extension](https://github.com/devgizzo/dash-to-panel) to show the shortcut letters next to dash icons and to handle the keyboard shortcuts. It is in the linux folder. I am not planning on maintain my own version for long though, I might switch to script or waybar in the future. Basically it is handy to have a dash that shows where you are and where you can go, but the longer you use the shortcuts the less you need them in your vision.
 
-Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.kbd) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
+Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service
+to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.kbd) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
 
 ## MacOs
 
-Keyboard navigation shines even more on a macbook with macos. Just keep your application windows maximized, no need to fiddle.
-Even better to run Asahi Linux or Asahi Alarm with Omarchy, but if you need multi monitor setups or the best battery life or mac specific software, Raycast and Karabiner make macos workable for a lot of people.
+Keyboard navigation shines even more on a macbook with macos. Just keep your application windows maximized,
+no need to fiddle with touchpad to manage windows.
 
-MacOS works through [Raycast](https://www.raycast.com/) for assigning shortcuts to launch apps. These shortcuts can then be called from other applications.
-For MacOS I first worked with [Karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements), you can install this with the [karabiner.json](https://github.com/devgizzo/homerow/blob/main/macos/karabiner.json) found in the macos folder.
-This works but isn't ideal. You need to maintain a bit of lag between opening a keyboard layer and selecting an option on the layer, else you end up typing letters instead.
+MacOS works through [Raycast](https://www.raycast.com/) a menu app for assigning keyboard shortcuts to launch
+apps. Kanata then remaps this to keyboard layers for easy access to the shortcuts. Under the hood it just calls
+the Raycast shortcuts. Anyway, so I have created a [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata.kbd) config file to support this. 
 
-However Kanata can also be installed on macos. So I have created a [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata.kbd) config file to support this. Kanata needs the Karabiner driver for this. So if you installed Karabiner-Elements you already have this installed.
-For MacOS Kanata is more stable and the keyboard layers are more solid. So I am not moving back.
-Anyway, this solution also uses Raycast to assign the shortcuts that launch or focus the apps.
+Kanata is a bit of a hassle to install on MacOS though, because of the conflict between Karabiner and
+Karabiner driver and because of security issues and because of working with launchctl services manually.
 
-Kanata is a bit of a hassle to install on MacOS though, because of the conflict with Karabiner itself, while it uses its driver and because of security issues. For me it is worth it though.
+Somebody created a [install script](https://gist.github.com/Jaycedam/4db80fc49c1d23c76c90c9b3e653c07f) for the whole setup, if you are lucky it works out of the box.
+Or you can go through the [install guide manually](https://github.com/jtroo/kanata/discussions/1537)
+
+What the steps to install contain: 
+
+1. installing Karabiner driver kit (already installed if you are already using Karabiner-Elements)
+2. installing Kanata from homebrew
+3. writing and modifying 3 .plist files and installing them as root
+4. setting privacy and allow input permissions
+
+After installation set Raycast to open at option + space.
+
+Then add your favorite apps to the Raycast menu
+and add aliasses and keyboard shortcuts to them as per below:
+
+| favorite | alias | keyboard shortcut |
+|----------|-------|-------------------|
+| 1        | w     | option + 1        |
+| 2        | e     | option + 2        |
+| 3        | r     | option + 3        |
+| 4        | t     | option + 4        |
+| 5        | s     | option + 5        |
+| 6        | d     | option + 6        |
+| 7        | f     | option + 7        |
+| 8        | g     | option + 8        |
+| 9        | c     | option + 9        |
+| 10       | v     | option + 0        |
+| 11       | q     | option + F1       |
+| 12       | w .   | option + F2       |
+| 13       | e .   | option + F3       |
+| 14       | a .   | option + F4       |
+| 15       | s .   | option + F5       |
+| 16       | d .   | option + F6       |
+| 17       | z .   | option + F7       |
+| 18       | x .   | option + F8       |
+
+The aliases are just visual queues within the raycast menu for you to see which keyboard shortcut is which.
+It is used as shortcut reference.
 
 ## Windows
 
@@ -54,8 +91,8 @@ A Windows version is easily created from the linux Kanata.kbd config. So far I h
 
 ## Other key mappings
 
-* My bindings also provide A + space to call a menu to launch arbitrary apps
-* Caps Lock and ctrl are swapped and a tap on Caps Lock which is ctrl results in toggling the visibility of the Gnome Dash for reference on where to go or which apps are open.
+* My bindings also provide A + space to call a menu to launch arbitrary apps (arcmenu or raycast or anything else)
+* On linux Caps Lock and ctrl are swapped and a tap on Caps Lock which is ctrl results in toggling the visibility of the Gnome Dash for reference on where to go or which apps are open. On MacOS I set this to toggle dock visibility and set caps to command because it's the most used modifier key on macos. 
 * A + Q to quit apps
 * Z layer provides cursor movement single step and some other common text operations.
 * X layer provides cursor movement single step with selection
@@ -67,25 +104,27 @@ You might find these useful or you can comment them out or remove them.
 
 ## The downsides of homerow keymapping
 
-One of the downsides of this method is that it prevents traditional homerow mods.
+One of the downsides of my mapping method is that it prevents traditional homerow mods.
 If you are used to type shift, ctrl, alt and super using the homerow keys that method will overlap my usecase.
 
-In some rare cases you might trigger a layer when typing because of holding keys while typing.
-But the biggest downside is latency. You might notice some letters print slower to the screen.
-
-But you gain lightspeed navigation!
+In some extremely rare cases you might trigger a layer when typing because of holding multiple keys.
+In other cases you expect the layer to pick up faster like in combining text editing and normal typing. You can adjust the timeout values
+to mitigate these problems. And if needed add a few ms pause between regular typing and layer switching. 
 
 ## Launching and quiting applications
 
-Applications are assigned left to right on the keyboard, Super F1 till F10...
+Applications are assigned left to right on the keyboard, Super+F1 till F10 on linux, Option+1 till Option+0 on macos.
+Now the shortcuts documented below are linux shortcuts only. If needed you can lookup the macos equivalent in the kanata.kbd file.
+The mapping is very similar on macos.
+
 
 ### Hold A key
 
-| layer key | shortcut      | function                                                                                            |
-| --------- | ------------- | --------------------------------------------------------------------------------------------------- |
-| W         | Super + F1    | Launch application 1                                                                                |
-| V         | Super + F10   | Launch application 10                                                                               |
-| Q         | Super + Q     | Quit current application                                                                            |
+| layer key | shortcut      | function                                                                                                                    |
+|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------|
+| W         | Super + F1    | Launch application 1                                                                                                        |
+| V         | Super + F10   | Launch application 10                                                                                                       |
+| Q         | Super + Q     | Quit current application                                                                                                    |
 | Space     | Super + space | Launch a menu (like arcmenu on linux or raycast on macos) for launching arbitrairy apps that are not covered by the layers. |
 
 ![](images/a%20layer.png)
