@@ -103,8 +103,9 @@ This combines my custom key mappings with the traditional homerow mod keys as li
 
 This however means that layers are ontop of each other. Especially on the left hand. In order to differentiate between them there are a few quirks to avoid conflicts.
 1. You have to combine left hand homerow keys with right hand normal keys and vice versa. Just like typing uppercase.
-2. Left and right cmd / super keys can be held down to make combinations.
-3. When left and right cmd / super are combined with other modifier keys, then keys should be pressed simultaneous as a chord.
+2. This left / right split is only necessary on potentially conflicting keys, so not on special characters, numeric or function keys. 
+3. Left and right cmd / super keys can be held down to make combinations.
+4. When left and right cmd / super are combined with other modifier keys, then keys should be pressed simultaneous as a chord.
 
 Examples:
 
