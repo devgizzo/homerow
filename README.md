@@ -107,6 +107,7 @@ This however means that layers are ontop of each other. Especially on the left h
 3. Left and right cmd / super keys can be held down to make combinations.
 4. When left and right cmd / super are combined with other modifier keys, then keys should be pressed simultaneous as a chord.
 5. Chording is easiest on a mechanical keyboard, it can be done on a macbook keyboard but it's less reliable due to short key travel.
+6. Left and right shift are only available in chords (because of a bug in Kanata macos), for normal typing use default keyboard shift left and right.
 
 Examples:
 
