@@ -89,6 +89,29 @@ It is used as shortcut reference.
 
 A Windows version is easily created from the linux Kanata.kbd config. So far I have not done this yet.
 
+## Kanata plus homerow mod
+
+I have also created a [kanata-homerow.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata-homerow.kbd) file for linux and [kanata-homerow.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata-homerow.kbd) for macos.\
+This combines my custom key mappings with the traditional homerow mod keys as listed below:
+
+| layer key | shortcut          | layer key | shortcut           |
+|-----------|-------------------|-----------|--------------------|
+| a         | left cmd / super  | ;         | right cmd / super  |
+| s         | left option / alt | l         | right option / alt |
+| d         | left control      | k         | right control      |
+| f         | left shift        | j         | right shift        |
+
+This however means that layers are ontop of each other. Especially on the left hand. In order to differentiate between them there are a few quirks to avoid conflicts.
+1. You have to combine left hand homerow keys with right hand normal keys and vice versa. Just like typing uppercase.
+2. Left and right cmd / super keys can be held down to make combinations.
+3. When left and right cmd / super are combined with other modifier keys, then keys should be pressed simultaneous as a chord.
+
+Examples:
+
+1. cmd + k, cmd can be held down first with the left hand, k can be pressed with the right hand.
+2. cmd + shift + k, cmd and shift have to pressed as a chord with the left hand, then k can be pressed with the right hand.
+4. cmd + option + w, cmd and option should be pressed as a chord using the right hand, then w can be pressed with the left.
+
 ## Other key mappings
 
 * My bindings also provide A + space to call a menu to launch arbitrary apps (arcmenu or raycast or anything else)
