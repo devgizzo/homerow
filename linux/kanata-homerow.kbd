@@ -24,7 +24,7 @@
 (deflayer base
  @q w e r t y u i o p
  @a @s @d @f g h j @k @l
- @z @x @c @v b n m @caps @lctrl lshift rshift ; ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
+ @z @x @c @v b n m @caps @lctrl lshift rshift @scln ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
 )
 
 (deflayer nomods
@@ -86,6 +86,7 @@
   d (tap-hold-release-keys $timeouttap $timeouthold (multi d @tap) (multi lctrl) (q w e r t y u i o p a s d f g h j k l z x c v b n m))
   l (tap-hold-release-keys $timeouttap $timeouthold (multi l @tap) (multi ralt) ())
   k (tap-hold-release-keys $timeouttap $timeouthold (multi k @tap) (multi rctrl) ())
+  scln (tap-hold-release-keys $timeouttap $timeouthold scln rmet ())
 )
 
 ;; ----------------------------
