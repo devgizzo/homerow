@@ -23,7 +23,7 @@
 
 (deflayer base
  @q w e r t y u i o p
- @a @s @d @f g h j @k @l
+ @a @s @d @f g h @j @k @l
  @z @x @c @v b n m @caps @lctrl lshift rshift @scln ' [ ] \ , . / ` 1 2 3 4 5 6 7 8 9 0 - = enter
 )
 
@@ -73,20 +73,25 @@
     (on-idle-fakekey to-base tap $timeoutregulartyping)
   )
 
-  caps (tap-hold $timeouttap $timeouthold (multi M-i) lctrl)
+  caps (tap-hold $timeouttap $timeouthold M-i lctrl)
   lctrl caps
   a (tap-hold-release-keys $timeouttap $timeouthold (multi a @tap) (multi (layer-while-held a-layer) lmet) (z x y u i o p h j k l b n m))
+  s (tap-hold-release-keys $timeouttap $timeouthold (multi s @tap) lalt (q w u i o p a j k l z x c c v b n m))
+  d (tap-hold-release-keys $timeouttap $timeouthold (multi d @tap) lctrl (q w e r t y u i o p a s d f g h j k l z x c v b n m))
   f (tap-hold-release-keys $timeouttap $timeouthold (multi f @tap) (layer-while-held f-layer) (r t y u i o p g h j k l c v b n m))
+
   z (tap-hold-release-keys $timeouttap $timeouthold (multi z @tap) (layer-while-held z-layer) (q w e r t y g h b n m))
   x (tap-hold-release-keys $timeouttap $timeouthold (multi x @tap) (layer-while-held x-layer) (q w e r t y a s f g h z c v b n m l k))
   c (tap-hold-release-keys $timeouttap $timeouthold (multi c @tap) (layer-while-held c-layer) (q w e r t y a s d f g h z x v b n m l k))
   v (tap-hold-release-keys $timeouttap $timeouthold (multi v @tap) (layer-while-held v-layer) (q w e r t y a s d f g h c b n m l k))
+
   q (tap-hold-release-keys $timeouttap $timeouthold (multi q @tap) (layer-while-held q-layer) (y u i o p a s d f g h j k l z x c v b n m))
-  s (tap-hold-release-keys $timeouttap $timeouthold (multi s @tap) (multi lalt) (q w u i o p a j k l z x c c v b n m))
-  d (tap-hold-release-keys $timeouttap $timeouthold (multi d @tap) (multi lctrl) (q w e r t y u i o p a s d f g h j k l z x c v b n m))
-  l (tap-hold-release-keys $timeouttap $timeouthold (multi l @tap) (multi ralt) ())
-  k (tap-hold-release-keys $timeouttap $timeouthold (multi k @tap) (multi rctrl) ())
+
+  j (tap-hold-release-keys $timeouttap $timeouthold (multi j @tap) rshift ())
+  l (tap-hold-release-keys $timeouttap $timeouthold (multi l @tap) ralt ())
+  k (tap-hold-release-keys $timeouttap $timeouthold (multi k @tap) rctrl ())
   scln (tap-hold-release-keys $timeouttap $timeouthold scln rmet ())
+
 )
 
 ;; ----------------------------
@@ -121,6 +126,56 @@
   d (macro M-f16)
   z (macro M-f17)
   x (macro M-f18)
+
+  y (macro S-y)
+  u (macro S-u)
+  i (macro S-i)
+  o (macro S-o)
+  p (macro S-p)
+  h (macro S-h)
+  j (macro S-j)
+  k (macro S-k)
+  l (macro S-l)
+  b (macro S-b)
+  n (macro S-n)
+  m (macro S-m)
+
+  , (macro S-,)
+  . (macro S-.)
+  / (macro S-/)
+  ' (macro S-')
+  \ (macro S-\)
+  [ (macro S-[)
+  ] (macro S-])
+  - (macro S--)
+  + (macro S-+)
+  ; (macro S-;)
+  ` (macro S-`)
+
+  1 (macro S-1)
+  2 (macro S-2)
+  3 (macro S-3)
+  4 (macro S-4)
+  5 (macro S-5)
+  6 (macro S-6)
+  7 (macro S-7)
+  8 (macro S-8)
+  9 (macro S-9)
+  0 (macro S-0)
+
+  F1 (macro S-F1)
+  F2 (macro S-F2)
+  F3 (macro S-F3)
+  F4 (macro S-F4)
+  F5 (macro S-F5)
+  F6 (macro S-F6)
+  F7 (macro S-F7)
+  F8 (macro S-F8)
+  F9 (macro S-F9)
+  F10 (macro S-F10)
+  F11 (macro S-F11)
+  F12 (macro S-F12)
+
 )
 
 ;; ----------------------------
@@ -130,10 +185,10 @@
 (deflayermap (z-layer)
   u (macro home)
   o (macro end)
-  j (multi left)
-  k (multi down)
-  i (multi up)
-  l (multi right)
+  j (macro left)
+  k (macro down)
+  i (macro up)
+  l (macro right)
   p (macro pgup)
   ; (macro pgdn)
 
@@ -153,10 +208,10 @@
 (deflayermap (x-layer)
   u (macro S-home)
   o (macro S-end)
-  j (multi S-left)
-  k (multi S-down)
-  i (multi S-up)
-  l (multi S-right)
+  j (macro S-left)
+  k (macro S-down)
+  i (macro S-up)
+  l (macro S-right)
   p (macro S-pgup)
   ; (macro S-pgdn)
 
@@ -170,10 +225,10 @@
 (deflayermap (c-layer)
   u (macro C-home)
   o (macro C-end)
-  j (multi C-left)
-  k (multi C-down)
-  i (multi C-up)
-  l (multi C-right)
+  j (macro C-left)
+  k (macro C-down)
+  i (macro C-up)
+  l (macro C-right)
   p (macro S-pgup)
   ; (macro S-pgdn)
 )
@@ -185,10 +240,10 @@
 (deflayermap (v-layer)
   u (macro C-S-home)
   o (macro C-S-end)
-  j (multi C-S-left)
-  k (multi C-S-down)
-  i (multi C-S-up)
-  l (multi C-S-right)
+  j (macro C-S-left)
+  k (macro C-S-down)
+  i (macro C-S-up)
+  l (macro C-S-right)
   p (macro S-pgup)
   ; (macro S-pgdn)
 
