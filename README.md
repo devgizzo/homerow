@@ -103,11 +103,8 @@ This combines my custom key mappings with the traditional homerow mod keys as li
 
 This however means that layers are ontop of each other. Especially on the left hand. In order to differentiate between them there are a few quirks to avoid conflicts.
 1. You have to combine left hand homerow keys with right hand normal keys and vice versa. Just like typing uppercase.
-2. This left / right split is only necessary on potentially conflicting keys, so not on special characters, numeric or function keys. 
-3. Left and right cmd / super keys can be held down to make combinations.
-4. When left and right cmd / super are combined with other modifier keys, then keys should be pressed simultaneous as a chord.
-5. Chording is easiest on a mechanical keyboard, it can be done on a macbook keyboard but it's less reliable due to short key travel.
-6. Left and right shift are only available in chords (because of a bug in Kanata macos), for normal typing use default keyboard shift left and right.
+2. This left / right split is only necessary on potentially conflicting keys, so not on special characters, numeric or function keys.
+3. When left cmd / super or left shift is combined with other modifier keys, then keys should be pressed simultaneous as a chord.
 
 Examples:
 
