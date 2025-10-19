@@ -34,6 +34,8 @@ The launching of the applications in your distro is something you should take ca
 Guides to install [Keyd](https://github.com/rvaiya/keyd/tree/master) and [Kanata](https://github.com/jtroo/kanata) can be found on github. Both basically use a systemd service
 to launch an executable with the corresponding config [kanata.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata.kbd) or [keyd.conf](https://github.com/devgizzo/homerow/blob/main/linux/keyd.conf) 
 
+I have also created an [extended kanata configuration](#Traditional-homerow-extension) which add traditional homerow mod keys over my custom bindings.
+
 ## MacOs
 
 Keyboard navigation shines even more on a macbook with macos. Just keep your application windows maximized,
@@ -89,29 +91,6 @@ It is used as shortcut reference.
 
 A Windows version is easily created from the linux Kanata.kbd config. So far I have not done this yet.
 
-## Kanata plus homerow mod
-
-I have also created a [kanata-homerow.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata-homerow.kbd) file for linux and [kanata-homerow.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata-homerow.kbd) for macos.\
-This combines my custom key mappings with the traditional homerow mod keys as listed below:
-
-| layer key | shortcut          | layer key | shortcut           |
-|-----------|-------------------|-----------|--------------------|
-| a         | left cmd / super  | ;         | right cmd / super  |
-| s         | left option / alt | l         | right option / alt |
-| d         | left control      | k         | right control      |
-| f         | left shift        | j         | right shift        |
-
-This however means that layers are ontop of each other. Especially on the left hand. In order to differentiate between them there are a few quirks to avoid conflicts.
-1. You have to combine left hand homerow keys with right hand normal keys and vice versa. Just like typing uppercase.
-2. This left / right split is only necessary on potentially conflicting keys, so not on special characters, numeric or function keys.
-3. When left cmd / super or left shift is combined with other modifier keys, then keys should be pressed simultaneous as a chord.
-
-Examples:
-
-1. cmd + k, cmd can be held down first with the left hand, k can be pressed with the right hand.
-2. cmd + shift + k, cmd and shift have to pressed as a chord with the left hand, then k can be pressed with the right hand.
-4. cmd + option + w, cmd and option should be pressed as a chord using the right hand, then w can be pressed with the left.
-
 ## Other key mappings
 
 * My bindings also provide A + space to call a menu to launch arbitrary apps (arcmenu or raycast or anything else)
@@ -127,8 +106,8 @@ You might find these useful or you can comment them out or remove them.
 
 ## The downsides of homerow keymapping
 
-One of the downsides of my mapping method is that it prevents traditional homerow mods.
-If you are used to type shift, ctrl, alt and super using the homerow keys that method will overlap my usecase.
+One of the downsides of my mapping method is that it overlaps with traditional homerow mod keys.
+I have created an [extended kanata configuration](#Traditional-homerow-extension) to support both my mappings and traditional homerows using chords.
 
 In some extremely rare cases you might trigger a layer when typing because of holding multiple keys.
 In other cases you expect the layer to pick up faster like in combining text editing and normal typing. You can adjust the timeout values
@@ -285,3 +264,29 @@ Move your hand one row up from the home row to access the browser specific short
 | T   | Ctrl + T           | Open new tab         |
 
 ![](images/q%20layer.png)
+
+## Traditional homerow extension
+
+When using the [kanata-homerow.kbd](https://github.com/devgizzo/homerow/blob/main/linux/kanata-homerow.kbd) file for linux or [kanata-homerow.kbd](https://github.com/devgizzo/homerow/blob/main/macos/kanata-homerow.kbd) for macos
+this adds traditional homerow mod keys over the navigation bindings.
+
+| layer key | shortcut          | layer key | shortcut           |
+|-----------|-------------------|-----------|--------------------|
+| A         | left cmd / super  | ;         | right cmd / super  |
+| S         | left option / alt | L         | right option / alt |
+| D         | left control      | K         | right control      |
+| F         | left shift        | J         | right shift        |
+
+![](images/chord%20layer.png)
+
+In order to differentiate between keyboard layers there are a few quirks to avoid conflicts.
+1. You have to combine left hand homerow keys with right hand normal keys and vice versa. Just like typing uppercase.
+2. This left / right split is only necessary on potentially conflicting keys A and F, so not on special characters, numeric or function keys.
+3. When left cmd / super or left shift is combined with other modifier keys, then keys should be pressed simultaneous as a chord.
+
+Examples:
+
+1. cmd + k, cmd can be held down first with the left hand, k can be pressed with the right hand.
+2. cmd + shift + k, cmd and shift have to pressed as a chord with the left hand, then k can be pressed with the right hand.
+4. cmd + option + w, cmd and option should be pressed as a chord using the right hand, then w can be pressed with the left.
+
