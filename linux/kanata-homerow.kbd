@@ -15,6 +15,7 @@
   timeoutregulartyping 200
   timeouttap 300
   timeouthold 300
+  timerepeat 20
 )
 
 ;; ----------------------------
@@ -185,10 +186,10 @@
 (deflayermap (z-layer)
   u (macro home)
   o (macro end)
-  j (macro left)
-  k (macro down)
-  i (macro up)
-  l (macro right)
+  j (tap-hold-press $timeouttap $timeouthold left (macro-repeat left $timerepeat))
+  k (tap-hold-press $timeouttap $timeouthold down (macro-repeat down $timerepeat))
+  i (tap-hold-press $timeouttap $timeouthold up (macro-repeat up $timerepeat))
+  l (tap-hold-press $timeouttap $timeouthold right (macro-repeat right $timerepeat))
   p (macro pgup)
   ; (macro pgdn)
 
@@ -208,10 +209,10 @@
 (deflayermap (x-layer)
   u (macro S-home)
   o (macro S-end)
-  j (macro S-left)
-  k (macro S-down)
-  i (macro S-up)
-  l (macro S-right)
+  j (tap-hold-press $timeouttap $timeouthold S-left (macro-repeat S-left $timerepeat))
+  k (tap-hold-press $timeouttap $timeouthold S-down (macro-repeat S-down $timerepeat))
+  i (tap-hold-press $timeouttap $timeouthold S-up (macro-repeat S-up $timerepeat))
+  l (tap-hold-press $timeouttap $timeouthold S-right (macro-repeat S-right $timerepeat))
   p (macro S-pgup)
   ; (macro S-pgdn)
 
@@ -260,5 +261,8 @@
   w (macro C-w)
   e (macro C-S-tab)
   r (macro C-tab)
-  t (macro C-t)
+  t (macro C-t esc)
+  5 (macro C-t)
+  4 (macro C-n)
+  3 (macro C-r)
 )
